@@ -3,3 +3,68 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-container button{
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 2;
+}
+
+.carousel-container button:hover {
+    background-color: rgb(175, 175, 175);
+}
+
+button.btn-prev {
+    left: 2%;
+    top: 50%;
+}
+
+button.btn-next {
+    right: 2%;
+    top: 50%;
+}
+
+.carousel {
+    border: 2px solid red;
+    height: 40vw;
+    width: 90vw;
+    margin: 5rem 0;
+    position: relative;
+}
+
+.frame {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+div.frame-on {
+    visibility: visible;
+}
+
+div img {
+    max-width: 100%;
+    object-position: 50% 50%;
+}
+
+.inserction {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    text-align: end;
+    margin: 2rem 1.5rem;
+    max-width: 90%;
+}
